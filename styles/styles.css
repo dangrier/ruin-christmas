@@ -1,0 +1,64 @@
+@font-face {
+	font-family: Arimo;
+	src: url("../fonts/Arimo-Regular.ttf");
+}
+@font-face {
+	font-family: Schoolbell;
+	src: url("../fonts/Schoolbell-Regular.ttf");
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Arimo, sans-serif;
+}
+
+.container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+}
+
+.message-box {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+	row-gap: 2px;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	min-height: 200;
+}
+
+.message-box > .content {
+	flex-shrink: 1;
+	display: block;
+	text-align: center;
+	align-items: center;
+	font-size: 5rem;
+	margin: auto;
+}
+
+#ruiner {
+	font-family: Schoolbell, sans-serif;
+	text-decoration: underline black;
+	color: red;
+	font-size: 6rem;
+}
